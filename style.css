@@ -1,3 +1,5 @@
+/* General styles */ 
+
 * {
     box-sizing: border-box;
 }
@@ -6,4 +8,13 @@ body {
     background-color: hsl(185, 75%, 39%);
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
+}
+
+.card {
+    border: 2px solid red;
+    width: 90%;
+    margin: auto;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    border-radius: 20px;
 }
