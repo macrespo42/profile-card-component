@@ -11,10 +11,43 @@ body {
 }
 
 .card {
-    border: 2px solid red;
     width: 90%;
     margin: auto;
     margin-top: 50vh;
     transform: translateY(-50%);
     border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Profile picture */
+
+.profile-picture img{
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+
+/* Titles */
+
+.title {
+    border-bottom: 0.1rem solid hsl(0, 0%, 59%);
+}
+
+.title, #age {
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+.title #age {
+    margin-left: 0.3rem;
+}
+
+.title #name{
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+}
+
+.title #city {
+    font-size: 1rem;
 }
