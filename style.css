@@ -51,3 +51,32 @@ body {
 .title #city {
     font-size: 1rem;
 }
+
+/* Social media stats */
+
+.social-media-stats ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-right: 2rem;
+}
+
+.social-media-stats h2{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.social-media-stats p{
+    font-size: 14px;
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+.test-color-box {
+    color: hsl(185, 75%, 39%);
+    color: hsl(229, 23%, 23%);
+    color: hsl(227, 10%, 46%);
+    color: hsl(0, 0%, 59%);
+}
