@@ -12,6 +12,7 @@ body {
 
 .card {
     width: 90%;
+    max-width: 375px;
     margin: auto;
     margin-top: 50vh;
     transform: translateY(-50%);
@@ -22,61 +23,67 @@ body {
 
 /* Profile picture */
 
+.card-header {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 10rem;
+    width: 100%;
+    background: url(./images/bg-pattern-card.svg);
+    background-size: cover;
+}
+
 .profile-picture img{
+    margin-top: -3rem;
     border: 5px solid #fff;
     border-radius: 50%;
 }
 
-
 /* Titles */
 
-.title {
-    border-bottom: 0.1rem solid hsl(0, 0%, 59%);
+.card-main h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    margin-bottom: 0;
 }
 
-.title, #age {
+#age {
+    color: hsl(0, 0%, 59%);
     font-weight: 400;
-    color: hsl(227, 10%, 46%);
-}
-
-.title #age {
     margin-left: 0.3rem;
 }
 
-.title #name{
-    font-size: 18px;
-    color: hsl(229, 23%, 23%);
-}
-
-.title #city {
-    font-size: 1rem;
+#city {
+    color: hsl(0, 0%, 59%);
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Social media stats */
 
-.social-media-stats ul{
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    margin-right: 2rem;
+.card-footer {
+    border-top: 1px solid hsla(0, 0%, 59%, 0.3);
 }
 
-.social-media-stats h2{
+.card-footer ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.card-footer li {
+    margin-right: 3rem;
+}
+
+.card-footer h2{
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 0;
 }
 
-.social-media-stats p{
+.card-footer p{
     font-size: 14px;
     color: hsl(0, 0%, 59%);
     font-weight: 400;
     margin-top: 0.5rem;
-}
-
-.test-color-box {
-    color: hsl(185, 75%, 39%);
-    color: hsl(229, 23%, 23%);
-    color: hsl(227, 10%, 46%);
-    color: hsl(0, 0%, 59%);
 }
