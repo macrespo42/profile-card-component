@@ -5,20 +5,40 @@
 }
 
 body {
-    margin: 0;
-    font-size: 18px;
-}
-
-.main {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
     background-color: hsl(185, 75%, 39%);
     font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.content::before{
+    content: url(../images/bg-pattern-top.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-30%, -55%);
+}
+
+.content::after {
+    content: url(../images/bg-pattern-bottom.svg);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: translate(20%, 60%);
+}
+
+.content {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Kumbh Sans', sans-serif;
+    position: relative;
+    overflow: hidden;
 }
 
 .card {
@@ -30,6 +50,7 @@ body {
     border-radius: 20px;
     background-color: #fff;
     text-align: center;
+    width: 100%;
 }
 
 /* Profile picture */
